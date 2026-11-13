@@ -1,0 +1,48 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "langchain-nestdaddy"
+version = "0.1.0"
+description = "LangChain integration for NestDaddy: give your AI today's internet. Live web search, real-time news and page reading."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "NestDaddy", email = "hello@nestdaddy.com" }]
+keywords = ["langchain", "search", "news", "web search", "rag", "agents", "nestdaddy"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "langchain-core>=0.3.15,<2.0.0",
+    "httpx>=0.25.0,<1.0.0",
+    "pydantic>=2.7,<3.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+    "pytest-socket>=0.7",
+    "langchain-tests>=0.3.0",
+]
+
+[project.urls]
+Homepage = "https://nestdaddy.com/mcp"
+Documentation = "https://github.com/nestdaddy/langchain-nestdaddy#readme"
+Source = "https://github.com/nestdaddy/langchain-nestdaddy"
+"API reference" = "https://nestdaddy.com/apis"
+
+[tool.hatch.build.targets.wheel]
+packages = ["langchain_nestdaddy"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+markers = ["integration: calls the live NestDaddy API (needs NESTDADDY_API_KEY)"]
+addopts = "-m 'not integration'"

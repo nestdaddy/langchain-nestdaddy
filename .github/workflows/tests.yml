@@ -1,0 +1,32 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.11", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: pip install -e ".[test]"
+      - run: pytest tests/unit_tests --disable-socket --allow-unix-socket -q
+
+  integration:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[test]"
+      - run: pytest -m integration tests/integration_tests -q
+        env:
+          NESTDADDY_API_KEY: ${{ secrets.NESTDADDY_API_KEY }}
