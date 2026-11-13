@@ -11,6 +11,9 @@ pip install -U langchain-nestdaddy
 export NESTDADDY_API_KEY="your-key"   # free trial key: https://nestdaddy.com/mcp
 ```
 
+Step-by-step guide with agent and RAG examples:
+[Give your LangChain agent live web search and real-time news](https://nestdaddy.com/blog/langchain-live-web-search-news).
+
 | Class | What it does |
 |---|---|
 | `NestDaddySearch` | Web search on NestDaddy's own index (title, url, snippet, domain) |
