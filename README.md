@@ -8,7 +8,7 @@ reading for LangChain agents and RAG pipelines, from [NestDaddy](https://nestdad
 
 ```bash
 pip install -U langchain-nestdaddy
-export NESTDADDY_API_KEY="your-key"   # free trial key: https://nestdaddy.com/mcp
+export NESTDADDY_API_KEY="your-key"   # free key, 1,000 calls a month: https://nestdaddy.com/mcp
 ```
 
 Step-by-step guide with agent and RAG examples:

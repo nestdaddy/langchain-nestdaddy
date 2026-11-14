@@ -30,7 +30,7 @@ class NestDaddyAPIWrapper(BaseModel):
     """Calls the NestDaddy API with your key.
 
     The key is read from ``api_key`` or the ``NESTDADDY_API_KEY`` environment variable.
-    Get one at https://nestdaddy.com/mcp (free trial).
+    Get one at https://nestdaddy.com/mcp (Free plan: 1,000 calls a month).
     """
 
     model_config = ConfigDict(extra="forbid", arbitrary_types_allowed=True)
