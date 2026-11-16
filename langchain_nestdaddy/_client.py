@@ -9,7 +9,7 @@ import httpx
 from pydantic import BaseModel, ConfigDict, Field, SecretStr, model_validator
 
 DEFAULT_BASE_URL = "https://nestdaddy.com"
-USER_AGENT = "langchain-nestdaddy/0.1.1"
+USER_AGENT = "langchain-nestdaddy/0.1.2"
 
 
 class NestDaddyAPIError(RuntimeError):

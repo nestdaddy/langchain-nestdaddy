@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "langchain-nestdaddy"
-version = "0.1.1"
+version = "0.1.2"
 description = "LangChain integration for NestDaddy: give your AI today's internet. Live web search, real-time news and page reading."
 readme = "README.md"
 license = "MIT"
