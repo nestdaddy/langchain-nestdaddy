@@ -101,3 +101,9 @@ NESTDADDY_API_KEY=... pytest -m integration tests/integration_tests
 ```
 
 MIT licensed.
+
+## Community
+
+Questions, ideas, or something you built? Join **Agent Builders**, our Discord for people building AI agents and MCP servers: daily MCP news, alerts when MCP servers change their tools, and help from our team.
+
+[Join on Discord](https://discord.gg/CXStfSFC3v)
