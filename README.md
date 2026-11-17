@@ -1,5 +1,7 @@
 # langchain-nestdaddy
 
+> NestDaddy launched on Product Hunt on 17 Nov 2026. Feedback and reviews welcome: [producthunt.com/products/nestdaddy](https://www.producthunt.com/products/nestdaddy)
+
 **Give your AI today's internet.** Live web search, real-time breaking news from around the world and full page
 reading for LangChain agents and RAG pipelines, from [NestDaddy](https://nestdaddy.com)'s own index.
 
