@@ -10,7 +10,7 @@ reading for LangChain agents and RAG pipelines, from [NestDaddy](https://nestdad
 
 ```bash
 pip install -U langchain-nestdaddy
-export NESTDADDY_API_KEY="your-key"   # free key, 1,000 credits a month, no card: https://nestdaddy.com/mcp
+export NESTDADDY_API_KEY="your-key"   # free key, 1,000 free credits, no card: https://nestdaddy.com/mcp
 ```
 
 Step-by-step guide with agent and RAG examples:
